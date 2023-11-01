@@ -45,7 +45,7 @@ public class TruckTests
         Assert.That(truck.Status, Is.EqualTo(status));
     }
 
-    private static Truck CreateTruck(TruckStatus status) => new("xyz", "Truck-1", status);
+    private static Truck CreateTruck(TruckStatus status) => new(new TruckCode("xyz"), status, "Truck-1");
 
     private static IEnumerable<TruckStatus> AllStatuses { get; } = new TruckStatus[]
     {

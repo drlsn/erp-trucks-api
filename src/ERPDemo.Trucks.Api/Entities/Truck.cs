@@ -1,23 +1,31 @@
-﻿namespace ERPDemo.Trucks.Api.Entities;
+﻿using MongoDB.Bson.Serialization.Attributes;
+
+namespace ERPDemo.Trucks.Api.Entities;
 
 public class Truck
 {
-    public string Code { get; private set; }
-    public string Name { get; private set; }
-    public string? Description { get; private set; }
+    [BsonId]
+    public TruckId Id { get; init; }
+    public int Version { get; set; }
 
+    public TruckCode Code { get; private set; }
     public TruckStatus Status { get; private set; }
 
+    public string Name { get; set; }
+    public string? Description { get; set; }
+
     public Truck(
-        string code,
-        string name,
+        TruckCode code,
         TruckStatus status,
+        string name,
         string? description = null)
     {
         Code = code;
-        Name = name;
         Status = status;
+        Name = name;
         Description = description;
+
+        Id = new TruckId(Code.Value);
     }
 
     public Result UpdateStatus(TruckStatus status)
@@ -29,3 +37,5 @@ public class Truck
         return result;
     }
 }
+
+public record TruckId(string Value);
