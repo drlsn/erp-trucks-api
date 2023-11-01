@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ERPDemo.Trucks.Entities\ERPDemo.Trucks.Entities.csproj" />
+    <ProjectReference Include="..\ERPDemo.Trucks.Api\ERPDemo.Trucks.Api.csproj" />
   </ItemGroup>
 
 </Project>

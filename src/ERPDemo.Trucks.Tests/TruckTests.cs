@@ -1,3 +1,5 @@
+using ERPDemo.Trucks.Api.Entities;
+
 namespace ERPDemo.Trucks.Entities.Tests;
 
 public class TruckTests
@@ -13,7 +15,7 @@ public class TruckTests
 
         var result = truck.UpdateStatus(TruckStatus.OutOfService);
 
-        Assert.IsTrue(result);
+        Assert.IsTrue(result.IsSuccess);
         Assert.That(truck.Status, Is.EqualTo(TruckStatus.OutOfService));
     }
 
@@ -24,7 +26,7 @@ public class TruckTests
 
         var result = truck.UpdateStatus(TruckStatus.OutOfService);
 
-        Assert.IsTrue(result);
+        Assert.IsTrue(result.IsSuccess);
         Assert.That(truck.Status, Is.EqualTo(TruckStatus.OutOfService));
     }
 
@@ -39,7 +41,7 @@ public class TruckTests
 
         var result = truck.UpdateStatus(TruckStatus.ToJob);
 
-        Assert.IsFalse(result);
+        Assert.IsFalse(result.IsSuccess);
         Assert.That(truck.Status, Is.EqualTo(status));
     }
 

@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33103.201
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERPDemo.Trucks.Api", "ERPDemo.Trucks.Api\ERPDemo.Trucks.Api.csproj", "{16E9491B-6A55-4837-A88E-93E7D912BB19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ERPDemo.Trucks.Api", "ERPDemo.Trucks.Api\ERPDemo.Trucks.Api.csproj", "{16E9491B-6A55-4837-A88E-93E7D912BB19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERPDemo.Trucks.Entities", "ERPDemo.Trucks.Entities\ERPDemo.Trucks.Entities.csproj", "{D6266ECF-360E-48ED-BDCE-85A9FFA500BC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERPDemo.Trucks.Entities.Tests", "ERPDemo.Trucks.Entities.Tests\ERPDemo.Trucks.Entities.Tests.csproj", "{A72BD410-E747-4A92-9055-359B375CFCF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ERPDemo.Trucks.Tests", "ERPDemo.Trucks.Tests\ERPDemo.Trucks.Tests.csproj", "{A2DBF2EB-084D-4BDA-AD2C-6F07ED3559CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +17,10 @@ Global
 		{16E9491B-6A55-4837-A88E-93E7D912BB19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16E9491B-6A55-4837-A88E-93E7D912BB19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16E9491B-6A55-4837-A88E-93E7D912BB19}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D6266ECF-360E-48ED-BDCE-85A9FFA500BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D6266ECF-360E-48ED-BDCE-85A9FFA500BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D6266ECF-360E-48ED-BDCE-85A9FFA500BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D6266ECF-360E-48ED-BDCE-85A9FFA500BC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A72BD410-E747-4A92-9055-359B375CFCF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A72BD410-E747-4A92-9055-359B375CFCF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A72BD410-E747-4A92-9055-359B375CFCF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A72BD410-E747-4A92-9055-359B375CFCF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2DBF2EB-084D-4BDA-AD2C-6F07ED3559CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2DBF2EB-084D-4BDA-AD2C-6F07ED3559CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2DBF2EB-084D-4BDA-AD2C-6F07ED3559CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2DBF2EB-084D-4BDA-AD2C-6F07ED3559CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
