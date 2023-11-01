@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ERPDemo.Trucks.Api.Contracts;
+namespace ERPDemo.Trucks.Api.ApiContracts;
 
 public class DeleteTruckApiCommand
 {

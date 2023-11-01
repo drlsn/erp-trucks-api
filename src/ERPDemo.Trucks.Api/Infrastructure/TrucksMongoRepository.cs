@@ -5,8 +5,6 @@ namespace ERPDemo.Trucks.Api.Infrastructure;
 
 public class TrucksMongoRepository : ITruckRepository
 {
-    private static readonly string CollectionName = "trucks";
-
     private readonly MongoClient _client;
     private readonly string _databaseName;
 
@@ -82,6 +80,6 @@ public class TrucksMongoRepository : ITruckRepository
     private IMongoCollection<Truck> GetCollection()
     {
         var database = _client.GetDatabase(_databaseName);
-        return database.GetCollection<Truck>(CollectionName);
+        return database.GetCollection<Truck>(Truck.CollectionName);
     }
 }

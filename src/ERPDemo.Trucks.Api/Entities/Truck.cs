@@ -4,28 +4,37 @@ namespace ERPDemo.Trucks.Api.Entities;
 
 public class Truck
 {
+    public static readonly string CollectionName = "trucks";
+
     [BsonId]
     public TruckId Id { get; init; }
     public int Version { get; set; }
 
     public TruckCode Code { get; private set; }
-    public TruckStatus Status { get; private set; }
+    public TruckStatus Status { get; private set; } = TruckStatus.OutOfService;
 
     public string Name { get; set; }
     public string? Description { get; set; }
 
     public Truck(
         TruckCode code,
-        TruckStatus status,
         string name,
         string? description = null)
     {
         Code = code;
-        Status = status;
         Name = name;
         Description = description;
 
         Id = new TruckId(Code.Value);
+    }
+
+    public Truck(
+        TruckCode code,
+        TruckStatus status,
+        string name,
+        string? description = null) : this(code, name, description)
+    {
+        Status = status;
     }
 
     public Result UpdateStatus(TruckStatus status)
