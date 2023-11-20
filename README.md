@@ -1,4 +1,4 @@
-# Kitsune Study Documentation
+# ERP API
 
 &nbsp;&nbsp;&nbsp;&nbsp; Simple CRUD trucks management api.
 
